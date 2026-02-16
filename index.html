@@ -1,29 +1,109 @@
-<div class="product-grid">
-    <div class="product-card">
-        <img src="harissa.jpg" alt="Harissa Royale">
-        <h3>Harissa Royale</h3>
-        <p>100% naturel avec Safran noble</p>
-        <span class="price">30 Dh</span>
-    </div>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zayena - L'Art de l'Olive</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
 
-    <div class="product-card">
-        <img src="citron.jpg" alt="Olive Citron">
-        <h3>Olive-Citron</h3>
-        <p>Fraîcheur méditerranéenne</p>
-        <span class="price">28 Dh</span>
-    </div>
+    <nav class="navbar">
+        <div class="logo">ZAYENA</div>
+        <div class="nav-links">
+            <a href="#boutique">Boutique</a>
+            <a href="#avis">Avis</a>
+            <a href="https://wa.me/212690238881" class="wa-nav"><i class="fab fa-whatsapp"></i> Contact</a>
+        </div>
+    </nav>
 
-    <div class="product-card">
-        <img src="thym.jpg" alt="Olive au Thym">
-        <h3>Olive au Thym</h3>
-        <p>Thym sauvage de l'Atlas</p>
-        <span class="price">28 Dh</span>
-    </div>
+    <header class="hero">
+        <div class="hero-content">
+            <span class="badge">100% Naturel - Produit du Maroc</span>
+            <h1>L'olive comme promesse,<br>Zayena en tendresse.</h1>
+            <p>Découvrez nos tartinades artisanales au Safran noble.</p>
+            <div class="hero-btns">
+                <a href="#boutique" class="btn-primary">Acheter maintenant</a>
+                <a href="https://www.instagram.com/TON_COMPTE_ICI" class="btn-secondary"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+        </div>
+    </header>
 
-    <div class="product-card">
-        <img src="persil.jpg" alt="Olive au Persil">
-        <h3>Olive au Persil</h3>
-        <p>Tradition et finesse</p>
-        <span class="price">28 Dh</span>
-    </div>
-</div>
+    <section id="boutique" class="products">
+        <h2 class="section-title">Notre Collection</h2>
+        <div class="product-grid">
+            <div class="card">
+                <img src="harissa.jpg" alt="Harissa Royale">
+                <div class="card-info">
+                    <h3>Harissa Royale</h3>
+                    <p>Piment & Safran noble</p>
+                    <div class="price">30 Dh</div>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="citron.jpg" alt="Olive Citron">
+                <div class="card-info">
+                    <h3>Olive-Citron</h3>
+                    <p>Fraîcheur intense</p>
+                    <div class="price">28 Dh</div>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="thym.jpg" alt="Olive au Thym">
+                <div class="card-info">
+                    <h3>Olive au Thym</h3>
+                    <p>Thym sauvage de l'Atlas</p>
+                    <div class="price">28 Dh</div>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="persil.jpg" alt="Olive au Persil">
+                <div class="card-info">
+                    <h3>Olive au Persil</h3>
+                    <p>Tradition et finesse</p>
+                    <div class="price">28 Dh</div>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="avis" class="testimonials">
+        <h2 class="section-title">Ce que disent nos clients</h2>
+        <div class="reviews-container">
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"La harissa au safran est une révélation. Un goût authentique et raffiné."</p>
+                <span class="client-name">- Sarah M.</span>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Parfait pour mes apéritifs. La qualité est vraiment premium, je recommande."</p>
+                <span class="client-name">- Youssef B.</span>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"On sent le naturel à chaque bouchée. Le packaging est magnifique."</p>
+                <span class="client-name">- Amina K.</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">ZAYENA</div>
+            <div class="social-links">
+                <a href="https://wa.me/212690238881"><i class="fab fa-whatsapp"></i> 0690238881</a>
+                <a href="https://www.instagram.com/TON_COMPTE_ICI"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+            <p class="copyright">&copy; 2026 Zayena Olive. Fait avec passion au Maroc 🇲🇦</p>
+        </div>
+    </footer>
+
+</body>
+</html>
