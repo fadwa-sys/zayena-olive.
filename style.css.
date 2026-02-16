@@ -1,69 +1,12 @@
-:root {
-    --primary: #606c38; /* Vert Olive */
-    --bg: #fefae0;      /* Beige Clair */
-    --dark: #283618;
-}
-
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: var(--bg);
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 8%;
-    background: white;
-    align-items: center;
-}
-
-.logo { font-weight: bold; font-size: 22px; color: var(--primary); }
-
-.nav-links a { text-decoration: none; color: black; margin-right: 20px; font-weight: 500; }
-
-.buy-btn { background: var(--primary); color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
-
-.hero {
-    height: 450px;
-    background: url('https://www.tadelakt.fr/img/cms/zellij-mosaique-marocaine.jpg'); /* Fond Zellij */
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-}
-
-.overlay { background: rgba(0,0,0,0.4); padding: 40px; border-radius: 10px; }
-
-.grid {
+.product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    padding: 50px 8%;
+    gap: 20px;
+    padding: 40px;
 }
 
-.card {
-    background: white;
-    padding: 20px;
+.product-card img {
+    width: 100%;
     border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    object-fit: cover;
 }
-
-.card img { width: 100%; border-radius: 10px; }
-
-.price { font-weight: bold; font-size: 20px; color: var(--primary); margin: 15px 0; }
-
-.add-cart { background: var(--dark); color: white; border: none; width: 100%; padding: 12px; border-radius: 8px; cursor: pointer; }
-
-.stats {
-    display: flex;
-    justify-content: space-around;
-    padding: 60px 8%;
-    background: white;
-    text-align: center;
-}
-
-.stat-item i { font-size: 30px; color: var(--primary); margin-bottom: 10px; }
