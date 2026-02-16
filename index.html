@@ -3,79 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zayen Olive | Boutique Officielle</title>
+    <title>Zayena Olive | Boutique</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-
     <nav>
-        <div class="logo">Zayen Olive</div>
-        <ul>
-            <li><a href="#produits">Produits</a></li>
-            <li><a href="#propos">À Propos</a></li>
-            <li><a href="#"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
-        </ul>
+        <div class="logo">Zayena Olive</div>
+        <div class="menu">
+            <a href="#">Produits</a>
+            <a href="#">À propos</a>
+            <a href="#">Contact</a>
+            <button class="btn-buy">Acheter</button>
+        </div>
     </nav>
 
     <header class="hero">
-        <div class="hero-content">
-            <h1>L'olive comme promesse, Zayena en tendresse.</h1>
-            <p>Découvrez l'excellence de nos produits 100% naturels.</p>
-        </div>
+        <h1>Mille Façons de Savourer</h1>
+        <p>Découvrez comment nos tartinades transforment vos repas.</p>
     </header>
 
-    <section id="produits" class="container">
-        <h2 class="section-title">Nos Tartinades Gourmandes</h2>
-        <div class="product-grid">
-            
-            <div class="card">
-                <div class="price-tag">30 dh</div>
-                <h3>Harissa</h3>
-                <p>Mélange épicé harissa et olive</p>
-                <button onclick="ajouter()">Ajouter au panier</button>
-            </div>
+    <section class="products">
+        <div class="product-card">
+            <img src="citron.jpg" alt="Olive Citron"> <h3>Olive-Citron</h3>
+            <p>Mélange frais de citron et olive</p>
+            <div class="price">28 dh</div>
+            <button class="add-btn">Ajouter au Panier</button>
+        </div>
 
-            <div class="card">
-                <div class="price-tag">28 dh</div>
-                <h3>Olive-Citron</h3>
-                <p>Mélange frais de citron et olive</p>
-                <button onclick="ajouter()">Ajouter au panier</button>
-            </div>
-
-            <div class="card">
-                <div class="price-tag">28 dh</div>
-                <h3>Thym</h3>
-                <p>Tartinade d'olive infusée au thym</p>
-                <button onclick="ajouter()">Ajouter au panier</button>
-            </div>
-
-            <div class="card">
-                <div class="price-tag">28 dh</div>
-                <h3>Persil</h3>
-                <p>Combinaison de persil et olive</p>
-                <button onclick="ajouter()">Ajouter au panier</button>
-            </div>
-
+        <div class="product-card">
+            <img src="harissa.jpg" alt="Harissa">
+            <h3>Harissa</h3>
+            <p>Mélange épicé harissa et olive</p>
+            <div class="price">30 dh</div>
+            <button class="add-btn">Ajouter au Panier</button>
         </div>
     </section>
 
-    <section class="stats">
-        <div class="stat"><h3>15K+</h3><p>Clients</p></div>
-        <div class="stat"><h3>2.5M DH</h3><p>Chiffre d'Affaire</p></div>
-        <div class="stat"><h3>5 Ans</h3><p>Expérience</p></div>
+    <section class="stats-container">
+        <div class="stat-box"><h2>15K+</h2><p>Clients Satisfaits</p></div>
+        <div class="stat-box"><h2>2.5M DH</h2><p>Chiffre d'Affaires</p></div>
+        <div class="stat-box"><h2>5</h2><p>Ans d'Expérience</p></div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 Zayen Olive - Savoir-faire Marocain</p>
-    </footer>
-
-    <script>
-        let count = 0;
-        function ajouter() {
-            count++;
-            document.getElementById('cart-count').innerText = count;
-        }
-    </script>
 </body>
 </html>
