@@ -3,107 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zayena Olive | Boutique Officielle</title>
+    <title>Zayena Olive | Premium</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap');
-        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap');
+        body { font-family: 'Inter', sans-serif; }
         .font-serif { font-family: 'Playfair Display', serif; }
-        .fade-in { opacity: 0; transform: translateY(20px); transition: 0.6s all ease-out; }
-        .fade-in.visible { opacity: 1; transform: translateY(0); }
     </style>
 </head>
-<body class="bg-stone-50">
+<body class="bg-stone-50 text-stone-900">
 
-    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm p-4">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-green-900 font-serif uppercase tracking-tighter">Zayena Olive</h1>
-            <div class="space-x-6 hidden md:block">
-                <a href="#accueil" class="hover:text-green-700">Accueil</a>
-                <a href="#commander" class="bg-green-800 text-white px-6 py-2 rounded-full hover:bg-green-700 transition">Commander</a>
-            </div>
-        </div>
+    <nav class="p-6 bg-white shadow-sm flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-green-800 font-serif">ZAYENA OLIVE</h1>
+        <a href="#commander" class="bg-green-700 text-white px-6 py-2 rounded-full">Commander</a>
     </nav>
 
-    <section id="accueil" class="h-screen flex items-center justify-center bg-[url('https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?q=80&w=2000')] bg-cover bg-center">
-        <div class="bg-black/40 w-full h-full flex items-center justify-center text-center text-white px-4">
-            <div class="max-w-2xl">
-                <h2 class="text-5xl md:text-7xl font-serif mb-6">L'olive comme promesse,<br>Zayena en tendresse</h2>
-                <p class="text-xl mb-8 opacity-90">Découvrez l'harmonie parfaite entre l'olive, le safran et le thym de l'Atlas.</p>
-                <button onclick="scrollToOrder()" class="bg-white text-green-900 px-10 py-4 rounded-full font-bold uppercase tracking-widest hover:scale-105 transition">Acheter Maintenant (30 DH)</button>
-            </div>
-        </div>
-    </section>
+    <header class="py-20 text-center bg-green-50">
+        <h2 class="text-5xl font-serif mb-4">L'olive comme promesse,<br>Zayena en tendresse</h2>
+        <p class="text-gray-600 max-w-lg mx-auto mb-8">La fusion parfaite entre l'olive marocaine, le safran et le thym de l'Atlas.</p>
+        <img src="https://images.unsplash.com/photo-1541014131533-33316647906d?auto=format&fit=crop&q=80&w=600" alt="Olive" class="mx-auto rounded-xl shadow-lg w-64">
+    </header>
 
-    <section id="commander" class="py-20 px-6 max-w-4xl mx-auto fade-in">
-        <div class="bg-white rounded-3xl shadow-xl overflow-hidden grid md:grid-cols-2">
-            <div class="p-10 bg-green-900 text-white">
-                <h3 class="text-3xl font-serif mb-6">Votre Panier</h3>
-                <div class="space-y-4">
-                    <div class="flex justify-between items-center border-b border-green-700 pb-4">
-                        <span>Pâte d'olive (Pot 200g)</span>
-                        <div class="flex items-center space-x-3">
-                            <button onclick="updateQty(-1)" class="w-8 h-8 rounded-full border border-white hover:bg-white hover:text-green-900">-</button>
-                            <span id="qty">1</span>
-                            <button onclick="updateQty(1)" class="w-8 h-8 rounded-full border border-white hover:bg-white hover:text-green-900">+</button>
-                        </div>
-                    </div>
-                    <div class="flex justify-between text-xl font-bold pt-4">
-                        <span>Total :</span>
-                        <span id="total">30 DH</span>
-                    </div>
+    <section id="commander" class="py-16 px-6 max-w-md mx-auto">
+        <div class="bg-white p-8 rounded-2xl shadow-xl border border-stone-200">
+            <h3 class="text-xl font-bold mb-4 italic text-green-800">Votre Commande</h3>
+            <div class="flex justify-between items-center mb-6">
+                <span>Pot Zayena (30 DH)</span>
+                <div class="flex items-center gap-4">
+                    <button onclick="changeQty(-1)" class="w-8 h-8 border rounded-full">-</button>
+                    <span id="qty" class="font-bold text-lg">1</span>
+                    <button onclick="changeQty(1)" class="w-8 h-8 border rounded-full">+</button>
                 </div>
             </div>
-
-            <div class="p-10">
-                <h3 class="text-2xl font-bold mb-6">Finaliser la commande</h3>
-                <form id="orderForm" class="space-y-4">
-                    <input type="text" placeholder="Nom complet" required class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-green-500 outline-none">
-                    <input type="tel" placeholder="Téléphone (WhatsApp)" required class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-green-500 outline-none">
-                    <textarea placeholder="Adresse de livraison au Maroc" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-green-500 outline-none"></textarea>
-                    <button type="submit" class="w-full bg-green-600 text-white py-4 rounded-lg font-bold hover:bg-green-700 transition">Confirmer par WhatsApp</button>
-                </form>
+            <div class="border-t pt-4 mb-6">
+                <div class="flex justify-between font-bold text-xl">
+                    <span>Total:</span>
+                    <span id="total" class="text-green-700">30 DH</span>
+                </div>
             </div>
+            <button onclick="sendWA()" class="w-full bg-green-700 text-white py-4 rounded-xl font-bold hover:bg-green-800 transition">
+                Commander via WhatsApp
+            </button>
         </div>
     </section>
 
     <script>
-        // 1. Calcul dynamique du prix
-        let quantity = 1;
-        const pricePerUnit = 30;
-
-        function updateQty(val) {
-            quantity += val;
-            if (quantity < 1) quantity = 1;
-            document.getElementById('qty').innerText = quantity;
-            document.getElementById('total').innerText = (quantity * pricePerUnit) + " DH";
+        let count = 1;
+        function changeQty(v) {
+            count = Math.max(1, count + v);
+            document.getElementById('qty').innerText = count;
+            document.getElementById('total').innerText = (count * 30) + " DH";
         }
-
-        // 2. Envoi de la commande vers WhatsApp (Interaction client)
-        document.getElementById('orderForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const name = e.target[0].value;
-            const phone = e.target[1].value;
-            const message = `Bonjour Zayena Olive, je suis ${name}. Je souhaite commander ${quantity} pot(s) de pâte d'olive pour un total de ${quantity * pricePerUnit} DH.`;
-            
-            // Remplacez le numéro par le vôtre
-            window.open(`https://wa.me/212600000000?text=${encodeURIComponent(message)}`, '_blank');
-        });
-
-        // 3. Animation au défilement (Scroll Animation)
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) entry.target.classList.add('visible');
-            });
-        });
-
-        document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
-
-        function scrollToOrder() {
-            document.getElementById('commander').scrollIntoView({ behavior: 'smooth' });
+        function sendWA() {
+            const msg = `Bonjour Zayena Olive, je souhaite commander ${count} pot(s).`;
+            window.open(`https://wa.me/212600000000?text=${encodeURIComponent(msg)}`);
         }
     </script>
-
 </body>
 </html>
