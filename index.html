@@ -3,173 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zayena Olive | Collection Officielle</title>
+    <title>Zayena Olive | L'excellence du terroir</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap');
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
         .font-serif { font-family: 'Playfair Display', serif; }
-        .product-card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .bg-olive { background-color: #3d5a2a; }
+        .text-olive { color: #3d5a2a; }
     </style>
 </head>
 <body class="bg-stone-50 text-stone-900">
 
-    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm p-4">
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-sm p-4">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-green-900 font-serif uppercase tracking-tight">Zayena Olive</h1>
-            <div class="space-x-8 hidden md:flex font-medium text-sm uppercase tracking-widest">
-                <a href="#collection" class="hover:text-green-700">Collection</a>
-                <a href="#savourer" class="hover:text-green-700">Recettes</a>
-                <a href="#commander" class="text-green-800 border-b-2 border-green-800">Commander</a>
+            <div class="flex items-center gap-3">
+                <img src="https://i.ibb.co/934YKQ1L/logo-direct.jpg" alt="Zayena Logo" class="h-12 w-auto">
+                <span class="text-xl font-bold text-olive font-serif">ZAYENA OLIVE</span>
+            </div>
+            <div class="hidden md:flex space-x-6 font-medium text-sm uppercase">
+                <a href="#collection" class="hover:text-olive">Collection</a>
+                <a href="#savourer" class="hover:text-olive">Expériences</a>
+                <a href="#commander" class="bg-olive text-white px-5 py-2 rounded-full">Commander</a>
             </div>
         </div>
     </nav>
 
-    <header class="h-[60vh] flex items-center justify-center bg-green-900 text-white text-center px-4 pt-16">
-        <div>
-            <h2 class="text-5xl md:text-6xl font-serif mb-4">L'excellence du terroir</h2>
-            <p class="text-xl opacity-80 font-light italic">"L'olive comme promesse, Zayena en tendresse"</p>
+    <header class="h-[70vh] flex items-center justify-center bg-olive text-white text-center px-4 relative overflow-hidden">
+        <div class="relative z-10">
+            <h1 class="text-5xl md:text-7xl font-serif mb-4">L'olive comme promesse,<br>Zayena en tendresse</h1>
+            <p class="text-xl opacity-90 font-light max-w-2xl mx-auto italic">
+                Découvrez comment nos tartinades transforment vos repas en expériences culinaires extraordinaires.
+            </p>
         </div>
+        <div class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1541014131533-33316647906d?q=80&w=2000')] bg-cover"></div>
     </header>
 
-    <section id="collection" class="py-20 px-6 max-w-6xl mx-auto">
+    <section id="collection" class="py-20 px-6 max-w-7xl mx-auto">
         <div class="text-center mb-16">
             <h2 class="text-4xl font-serif mb-2">Notre Collection</h2>
-            <div class="w-24 h-1 bg-green-800 mx-auto"></div>
+            <p class="text-stone-500 italic">Des saveurs authentiques 100% naturelles</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="product-card bg-white p-6 rounded-2xl shadow-sm border border-stone-100 text-center">
-                <img src="images/citron.jpg" alt="Olive-Citron" class="w-full h-48 object-cover rounded-xl mb-4 bg-stone-200">
-                <h3 class="text-xl font-bold mb-2">Olive-Citron</h3>
+            <div class="bg-white p-6 rounded-2xl shadow-md border border-stone-100 transition hover:shadow-xl">
+                <div class="h-48 bg-stone-200 rounded-xl mb-4 overflow-hidden">
+                    <img src="LIEN_IMAGE_CITRON" alt="Citron" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-bold">Olive-Citron</h3>
                 <p class="text-stone-500 text-sm mb-4">Mélange frais de citron et olive</p>
-                <span class="text-green-800 font-bold text-lg">28 DH</span>
+                <div class="text-xl font-bold text-olive border-t pt-2">28 DH</div>
             </div>
 
-            <div class="product-card bg-white p-6 rounded-2xl shadow-sm border border-stone-100 text-center">
-                <img src="images/thym.jpg" alt="Thym" class="w-full h-48 object-cover rounded-xl mb-4 bg-stone-200">
-                <h3 class="text-xl font-bold mb-2">Thym</h3>
-                <p class="text-stone-500 text-sm mb-4">Tartinade d'olive infusée au thym</p>
-                <span class="text-green-800 font-bold text-lg">28 DH</span>
+            <div class="bg-white p-6 rounded-2xl shadow-md border border-stone-100 transition hover:shadow-xl">
+                <div class="h-48 bg-stone-200 rounded-xl mb-4 overflow-hidden">
+                    <img src="LIEN_IMAGE_THYM" alt="Thym" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-bold">Thym</h3>
+                <p class="text-stone-500 text-sm mb-4">Tartinade infusée au thym de l'Atlas</p>
+                <div class="text-xl font-bold text-olive border-t pt-2">28 DH</div>
             </div>
 
-            <div class="product-card bg-white p-6 rounded-2xl shadow-sm border border-stone-100 text-center border-2 border-green-100">
-                <img src="images/harissa.jpg" alt="Harissa" class="w-full h-48 object-cover rounded-xl mb-4 bg-stone-200">
-                <h3 class="text-xl font-bold mb-2">Harissa</h3>
+            <div class="bg-white p-6 rounded-2xl shadow-md border-2 border-olive transition hover:shadow-xl">
+                <div class="h-48 bg-stone-200 rounded-xl mb-4 overflow-hidden">
+                    <img src="LIEN_IMAGE_HARISSA" alt="Harissa" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-bold">Harissa</h3>
                 <p class="text-stone-500 text-sm mb-4">Mélange épicé harissa et olive</p>
-                <span class="text-green-800 font-bold text-lg">30 DH</span>
+                <div class="text-xl font-bold text-olive border-t pt-2">30 DH</div>
             </div>
 
-            <div class="product-card bg-white p-6 rounded-2xl shadow-sm border border-stone-100 text-center">
-                <img src="images/persil.jpg" alt="Persil" class="w-full h-48 object-cover rounded-xl mb-4 bg-stone-200">
-                <h3 class="text-xl font-bold mb-2">Persil</h3>
+            <div class="bg-white p-6 rounded-2xl shadow-md border border-stone-100 transition hover:shadow-xl">
+                <div class="h-48 bg-stone-200 rounded-xl mb-4 overflow-hidden">
+                    <img src="LIEN_IMAGE_PERSIL" alt="Persil" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-bold">Persil</h3>
                 <p class="text-stone-500 text-sm mb-4">Combinaison de persil et olive</p>
-                <span class="text-green-800 font-bold text-lg">28 DH</span>
+                <div class="text-xl font-bold text-olive border-t pt-2">28 DH</div>
             </div>
         </div>
     </section>
 
     <section id="savourer" class="py-20 bg-stone-100 px-6">
-        <div class="max-w-5xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-serif mb-4">Mille Façons de Savourer</h2>
-                <p class="text-stone-600">Découvrez comment nos tartinades d'olive peuvent transformer vos repas quotidiens en expériences culinaires extraordinaires</p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-12">
-                <div class="space-y-6">
-                    <img src="images/bruschetta.jpg" alt="Bruschettas" class="w-full h-64 object-cover rounded-3xl shadow-lg">
-                    <h3 class="text-2xl font-serif text-green-900">Bruschettas Gourmandes</h3>
-                    <p class="text-stone-600 leading-relaxed">
-                        Tartinez généreusement nos tartinades d'olive sur du pain grillé croustillant. Ajoutez des tomates fraîches, du basilic et un trait d'huile d'olive pour une entrée élégante et délicieuse.
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-serif text-center mb-16 uppercase tracking-widest">Mille Façons de Savourer</h2>
+            
+            <div class="grid md:grid-cols-2 gap-16 items-center mb-20">
+                <div class="order-2 md:order-1">
+                    <h3 class="text-3xl font-serif mb-6 text-olive">Bruschettas Gourmandes</h3>
+                    <p class="text-lg text-stone-600 mb-6">
+                        Tartinez généreusement nos tartinades d'olive sur du pain grillé croustillant. Ajoutez des tomates fraîches, du basilic et un trait d'huile d'olive.
                     </p>
-                    <ul class="space-y-2 text-sm text-stone-700">
-                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Parfait pour les apéritifs et les réceptions</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Prêt en moins de 5 minutes</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Impressionne vos invités à chaque fois</li>
-                    </ul>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3 text-stone-700">
+                            <i class="fas fa-check-circle text-olive mt-1"></i>
+                            <p>Parfait pour les apéritifs et les réceptions</p>
+                        </div>
+                        <div class="flex items-start gap-3 text-stone-700">
+                            <i class="fas fa-check-circle text-olive mt-1"></i>
+                            <p>Prêt en moins de 5 minutes</p>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="space-y-6">
-                    <img src="images/accompagnement.jpg" alt="Accompagnement" class="w-full h-64 object-cover rounded-3xl shadow-lg">
-                    <h3 class="text-2xl font-serif text-green-900">Accompagnement Parfait</h3>
-                    <p class="text-stone-600 leading-relaxed">
-                        Servez nos tartinades d'olive avec du pain frais, des crackers ou des légumes crus. C'est l'accompagnement idéal pour les repas en famille ou entre amis.
-                    </p>
-                    <ul class="space-y-2 text-sm text-stone-700">
-                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Riche en saveurs authentiques marocaines</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> 100% naturel et sans conservateurs</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Parfait pour les pique-niques et les voyages</li>
-                    </ul>
+                <div class="order-1 md:order-2 rounded-3xl overflow-hidden shadow-2xl">
+                    <img src="LIEN_IMAGE_BRUSCHETTA" alt="Bruschetta" class="w-full hover:scale-105 transition duration-700">
                 </div>
             </div>
 
-            <div class="mt-20 bg-white p-10 rounded-3xl shadow-sm border-l-8 border-green-800">
-                <h3 class="text-2xl font-serif mb-4">Zayena Olive - Notre Fierté</h3>
-                <p class="text-stone-600 italic">
-                    Depuis 5 ans, Zayena Olive s'engage à apporter les saveurs authentiques du Maroc à vos tables. Avec une passion pour la qualité et le respect de la tradition, nous avons construit une communauté de clients fidèles qui apprécient l'excellence de nos produits 100% naturels.
-                </p>
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="rounded-3xl overflow-hidden shadow-2xl">
+                    <img src="LIEN_IMAGE_ACCOMPAGNEMENT" alt="Repas" class="w-full hover:scale-105 transition duration-700">
+                </div>
+                <div>
+                    <h3 class="text-3xl font-serif mb-6 text-olive">Accompagnement Parfait</h3>
+                    <p class="text-lg text-stone-600 mb-6">
+                        C'est l'accompagnement idéal pour les repas en famille ou entre amis. Riche en saveurs authentiques marocaines.
+                    </p>
+                    <div class="space-y-4 text-stone-700">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-leaf text-olive mt-1"></i>
+                            <p>100% naturel et sans conservateurs</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-users text-olive mt-1"></i>
+                            <p>Parfait pour les pique-niques et les voyages</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <section class="py-20 bg-olive text-white px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-4xl font-serif mb-8">Zayen Olive - Notre Fierté</h3>
+            <p class="text-xl leading-relaxed opacity-90 font-light">
+                Depuis 5 ans, Zayen Olive s'engage à apporter les saveurs authentiques du Maroc à vos tables. Avec une passion pour la qualité et le respect de la tradition, nous avons construit une communauté de clients fidèles qui apprécient l'excellence.
+            </p>
+        </div>
+    </section>
+
     <section id="commander" class="py-20 px-6 max-w-lg mx-auto">
-        <div class="bg-white p-8 rounded-3xl shadow-2xl border border-stone-200">
-            <h3 class="text-2xl font-serif mb-6 text-center">Passer commande</h3>
-            <div class="space-y-4">
-                <label class="block text-sm font-bold">Choisissez votre saveur :</label>
-                <select id="productSelect" onchange="updatePrice()" class="w-full p-3 border rounded-xl bg-stone-50 outline-none">
-                    <option value="28">Olive-Citron (28 DH)</option>
-                    <option value="28">Thym (28 DH)</option>
-                    <option value="30">Harissa (30 DH)</option>
-                    <option value="28">Persil (28 DH)</option>
-                </select>
+        <div class="bg-white p-10 rounded-3xl shadow-2xl border border-stone-200">
+            <h3 class="text-3xl font-serif mb-8 text-center text-olive">Commander</h3>
+            <div class="space-y-6">
+                <div>
+                    <label class="block text-xs uppercase font-bold text-stone-400 mb-2">Choisir une saveur</label>
+                    <select id="saveur" onchange="calc()" class="w-full p-4 border rounded-xl bg-stone-50 outline-none focus:ring-2 focus:ring-olive">
+                        <option value="28">Olive-Citron (28 DH)</option>
+                        <option value="28">Thym (28 DH)</option>
+                        <option value="30">Harissa (30 DH)</option>
+                        <option value="28">Persil (28 DH)</option>
+                    </select>
+                </div>
                 
                 <div class="flex justify-between items-center bg-stone-50 p-4 rounded-xl">
-                    <span>Quantité :</span>
-                    <div class="flex items-center gap-4">
-                        <button onclick="changeQty(-1)" class="w-8 h-8 border rounded-full">-</button>
-                        <span id="qtyCount" class="font-bold">1</span>
-                        <button onclick="changeQty(1)" class="w-8 h-8 border rounded-full">+</button>
+                    <span class="font-medium">Quantité</span>
+                    <div class="flex items-center gap-6">
+                        <button onclick="qty(-1)" class="w-10 h-10 bg-white shadow rounded-full border border-stone-100">-</button>
+                        <span id="qte" class="font-bold text-xl">1</span>
+                        <button onclick="qty(1)" class="w-10 h-10 bg-white shadow rounded-full border border-stone-100">+</button>
                     </div>
                 </div>
 
-                <div class="text-center py-4">
-                    <span class="text-gray-500">Total à payer :</span>
-                    <div id="totalPrice" class="text-3xl font-bold text-green-800">28 DH</div>
+                <div class="text-center py-6 border-t border-dashed">
+                    <p class="text-stone-400 uppercase text-xs font-bold mb-1">Prix Total</p>
+                    <div id="total" class="text-4xl font-bold text-olive">28 DH</div>
                 </div>
 
-                <button onclick="sendWhatsApp()" class="w-full bg-green-800 text-white py-4 rounded-xl font-bold hover:bg-green-700 transition shadow-lg">
-                    Confirmer via WhatsApp
+                <button onclick="order()" class="w-full bg-olive text-white py-5 rounded-2xl font-bold text-lg hover:shadow-lg active:scale-95 transition">
+                    Commander sur WhatsApp
                 </button>
             </div>
         </div>
     </section>
 
-    <footer class="py-10 text-center text-stone-400 text-sm border-t">
-        <p>&copy; 2026 Zayena Olive - Qualité Artisanale Marocaine</p>
-    </footer>
-
     <script>
-        let qty = 1;
-
-        function updatePrice() {
-            const price = document.getElementById('productSelect').value;
-            document.getElementById('totalPrice').innerText = (price * qty) + " DH";
+        let n = 1;
+        function qty(x) { 
+            n = Math.max(1, n + x); 
+            document.getElementById('qte').innerText = n;
+            calc();
         }
-
-        function changeQty(n) {
-            qty = Math.max(1, qty + n);
-            document.getElementById('qtyCount').innerText = qty;
-            updatePrice();
+        function calc() {
+            let p = document.getElementById('saveur').value;
+            document.getElementById('total').innerText = (n * p) + " DH";
         }
-
-        function sendWhatsApp() {
-            const product = document.getElementById('productSelect').options[document.getElementById('productSelect').selectedIndex].text;
-            const total = document.getElementById('totalPrice').innerText;
-            const msg = `Bonjour Zayena Olive, je souhaite commander ${qty} x ${product}. Total : ${total}.`;
-            window.open(`https://wa.me/212600000000?text=${encodeURIComponent(msg)}`);
+        function order() {
+            let s = document.getElementById('saveur').options[document.getElementById('saveur').selectedIndex].text;
+            let t = document.getElementById('total').innerText;
+            let m = `Bonjour Zayena Olive, je commande ${n} x ${s}. Total : ${t}.`;
+            window.open(`https://wa.me/212600000000?text=${encodeURIComponent(m)}`);
         }
     </script>
 </body>
